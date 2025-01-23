@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake & Ladders</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="animated-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+    <div class=" game-container">
+        <div> <button class="restart">restart</button></div>
+        <div class = "game-dashboard massage_sender">
+        </div>
+        <div class="game-area">
+            <div class="player-info">
+                <div class="computer_profile_picture"></div>
+                <div class="container_1">
+                    <div class="dice_1">
+                        <div class="face_1 front_1"></div>
+                        <div class="face_1 back_1"></div>
+                        <div class="face_1 top_1"></div>
+                        <div class="face_1 bottom_1"></div>
+                        <div class="face_1 right_1"></div>
+                        <div class="face_1 left_1"></div>
+                    </div>
+                    <button class="roll_1">Roll Dice</button>
+                </div>
+            </div>
+                <div id="game-board" class="board">
+                    <div class="cell" ><span id="cell-100"></span></div>
+                    <div class="cell"><span id="cell-99"></span></div>
+                    <div class="cell"><span id="cell-98"></span></div>
+                    <div class="cell"><span id="cell-97"></span></div>
+                    <div class="cell"><span id="cell-96"></span></div>
+                    <div class="cell"><span id="cell-95"></span></div>
+                    <div class="cell"><span id="cell-94"></span></div>
+                    <div class="cell"><span id="cell-93"></span></div>
+                    <div class="cell"><span id="cell-92"></span></div>
+                    <div class="cell"><span id="cell-91"></span></div>
+                    <div class="cell"><span id="cell-81"></span></div>
+                    <div class="cell"><span id="cell-82"></span></div>
+                    <div class="cell"><span id="cell-83"></span></div>
+                    <div class="cell"><span id="cell-84"></span></div>
+                    <div class="cell"><span id="cell-85"></span></div>
+                    <div class="cell"><span id="cell-86"></span></div>
+                    <div class="cell"><span id="cell-87"></span></div>
+                    <div class="cell"><span id="cell-88"></span></div>
+                    <div class="cell"><span id="cell-89"></span></div>
+                    <div class="cell"><span id="cell-90"></span></div>
+                    <div class="cell"><span id="cell-80"></span></div>
+                    <div class="cell"><span id="cell-79"></span></div>
+                    <div class="cell"><span id="cell-78"></span></div>
+                    <div class="cell"><span id="cell-77"></span></div>
+                    <div class="cell"><span id="cell-76"></span></div>
+                    <div class="cell"><span id="cell-75"></span></div>
+                    <div class="cell"><span id="cell-74"></span></div>
+                    <div class="cell"><span id="cell-73"></span></div>
+                    <div class="cell"><span id="cell-72"></span></div>
+                    <div class="cell"><span id="cell-71"></span></div>
+                    <div class="cell"><span id="cell-61"></span></div>
+                    <div class="cell"><span id="cell-62"></span></div>
+                    <div class="cell"><span id="cell-63"></span></div>
+                    <div class="cell"><span id="cell-64"></span></div>
+                    <div class="cell"><span id="cell-65"></span></div>
+                    <div class="cell"><span id="cell-66"></span></div>
+                    <div class="cell"><span id="cell-67"></span></div>
+                    <div class="cell"><span id="cell-68"></span></div>
+                    <div class="cell"><span id="cell-69"></span></div>
+                    <div class="cell"><span id="cell-70"></span></div>
+                    <div class="cell"><span id="cell-60"></span></div>
+                    <div class="cell"><span id="cell-59"></span></div>
+                    <div class="cell"><span id="cell-58"></span></div>
+                    <div class="cell"><span id="cell-57"></span></div>
+                    <div class="cell"><span id="cell-56"></span></div>
+                    <div class="cell"><span id="cell-55"></span></div>
+                    <div class="cell"><span id="cell-54"></span></div>
+                    <div class="cell"><span id="cell-53"></span></div>
+                    <div class="cell"><span id="cell-52"></span></div>
+                    <div class="cell"><span id="cell-51"></span></div>
+                    <div class="cell"><span id="cell-41"></span></div>
+                    <div class="cell"><span id="cell-42"></span></div>
+                    <div class="cell"><span id="cell-43"></span></div>
+                    <div class="cell"><span id="cell-44"></span></div>
+                    <div class="cell"><span id="cell-45"></span></div>
+                    <div class="cell"><span id="cell-46"></span></div>
+                    <div class="cell"><span id="cell-47"></span></div>
+                    <div class="cell"><span id="cell-48"></span></div>
+                    <div class="cell"><span id="cell-49"></span></div>
+                    <div class="cell"><span id="cell-50"></span></div>
+                    <div class="cell"><span id="cell-40"></span></div>
+                    <div class="cell"><span id="cell-39"></span></div>
+                    <div class="cell"><span id="cell-38"></span></div>
+                    <div class="cell"><span id="cell-37"></span></div>
+                    <div class="cell"><span id="cell-36"></span></div>
+                    <div class="cell"><span id="cell-35"></span></div>
+                    <div class="cell"><span id="cell-34"></span></div>
+                    <div class="cell"><span id="cell-33"></span></div>
+                    <div class="cell"><span id="cell-32"></span></div>
+                    <div class="cell"><span id="cell-31"></span></div>
+                    <div class="cell"><span id="cell-21"></span></div>
+                    <div class="cell"><span id="cell-22"></span></div>
+                    <div class="cell"><span id="cell-23"></span></div>
+                    <div class="cell"><span id="cell-24"></span></div>
+                    <div class="cell"><span id="cell-25"></span></div>
+                    <div class="cell"><span id="cell-26"></span></div>
+                    <div class="cell"><span id="cell-27"></span></div>
+                    <div class="cell"><span id="cell-28"></span></div>
+                    <div class="cell"><span id="cell-29"></span></div>
+                    <div class="cell"><span id="cell-30"></span></div>
+                    <div class="cell"><span id="cell-20"></span></div>
+                    <div class="cell"><span id="cell-19"></span></div>
+                    <div class="cell"><span id="cell-18"></span></div>
+                    <div class="cell"><span id="cell-17"></span></div>
+                    <div class="cell"><span id="cell-16"></span></div>
+                    <div class="cell"><span id="cell-15"></span></div>
+                    <div class="cell"><span id="cell-14"></span></div>
+                    <div class="cell"><span id="cell-13"></span></div>
+                    <div class="cell"><span id="cell-12"></span></div>
+                    <div class="cell"><span id="cell-11"></span></div>
+                    <div class="cell"><span id="cell-1"></span></div>
+                    <div class="cell"><span id="cell-2"></span></div>
+                    <div class="cell"><span id="cell-3"></span></div>
+                    <div class="cell"><span id="cell-4"></span></div>
+                    <div class="cell"><span id="cell-5"></span></div>
+                    <div class="cell"><span id="cell-6"></span></div>
+                    <div class="cell"><span id="cell-7"></span></div>
+                    <div class="cell"><span id="cell-8"></span></div>
+                    <div class="cell"><span id="cell-9"></span></div>
+                    <div class="cell"><span id="cell-10"></span></div>
+                </div>
+                    <div class="player-info">
+                        <div class="player_profile_picture"></div>
+                        <div class="container">
+                        <div class="dice">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                            <div class="face right"></div>
+                            <div class="face left"></div>
+                        </div>
+                        <button class="roll">Roll Dice</button>
+                </div>
+            </div>
+        </div>
+        <div id = "chatter" class = "game-dashboard info_loader" ></div>
+    </div>
+    <script src="./Script/script.js"></script>
+</body>
+</html>
