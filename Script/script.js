@@ -402,4 +402,5 @@ function rollDice_1(random_1) {
         autorunGame(random_1);
         dice_1.style.animation = 'none';
     }, 3050); 
+    
 }
