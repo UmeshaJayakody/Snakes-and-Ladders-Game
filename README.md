@@ -5,6 +5,7 @@ This is a web-based implementation of the classic Snake & Ladders game. The game
 ## Screenshots
 
 ![screenshot-1](./screenshots/screenshot-1.png)
+![screenshot-3](./screenshots/screenshot-3.png)
 ![screenshot-2](./screenshots/screenshot-2.png)
 
 ## Project Structure
