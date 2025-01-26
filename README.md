@@ -12,7 +12,6 @@ This is a web-based implementation of the classic Snake & Ladders game. The game
 - **Audio/**: Contains audio files used in the game.
 - **Image/**: Contains image files used in the game.
 - **Index.html**: The main HTML file that sets up the game interface.
-- **README.md**: This file, providing an overview of the project.
 - **Script/script.js**: The JavaScript file containing the game logic.
 - **Style/style.css**: The CSS file for styling the game interface.
 
